@@ -30,21 +30,3 @@ npm run dev
 ```
 Open **[http://localhost:5173/](http://localhost:5173/)** in your web browser.
 
----
-
-## Customizing Permanently
-1. Open the website, click the **Settings Gear** on the top right, and edit your details.
-2. Under the bottom footer of the sidebar, click **Export Config** to download `portfolio-config.json`.
-3. Open `config.js` in your editor, replace the content of the `portfolioConfig` object with the contents of your exported JSON, and save the file.
-
----
-
-## Production Build & Deployment
-To generate optimized, static HTML/CSS/JS files inside the `dist/` directory (ready to upload to GitHub Pages, Netlify, or Vercel):
-```bash
-npm run build
-```
-You can preview the built site locally using:
-```bash
-npm run preview
-```
