@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dadi Sri Lakshmi Sivani | Portfolio</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Personal portfolio of Dadi Sri Lakshmi Sivani - Data Science & AI Engineer. Explore projects, skills, and professional experience.">
+  <meta name="keywords" content="Data Science, AI Engineer, Machine Learning, Python, Portfolio, Dadi Sri Lakshmi Sivani">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- Background Animated blobs -->
+  <div class="blob-container">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+
+  <!-- Navigation Header -->
+  <header class="glass-header" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">
+        <span class="gradient-text logo-name" id="logo-text">Sivani</span>.
+      </a>
+      
+      <nav class="nav-links">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#timeline" class="nav-link">Experience</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+      
+      <div class="nav-actions">
+        <!-- Theme selection button -->
+        <button id="theme-btn" class="nav-icon-btn" title="Cycle Themes">
+          <i data-lucide="palette"></i>
+        </button>
+        <!-- Customizer gear button -->
+        <button id="customizer-toggle" class="nav-icon-btn highlight-btn" title="Customize Portfolio">
+          <i data-lucide="settings" class="spin-hover"></i>
+        </button>
+        <!-- Mobile Menu Toggle -->
+        <button id="mobile-menu-btn" class="nav-icon-btn mobile-only" title="Open Menu">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Dropdown -->
+  <div class="mobile-menu glass" id="mobile-menu">
+    <a href="#about" class="mobile-nav-link">About</a>
+    <a href="#skills" class="mobile-nav-link">Skills</a>
+    <a href="#projects" class="mobile-nav-link">Projects</a>
+    <a href="#timeline" class="mobile-nav-link">Experience</a>
+    <a href="#contact" class="mobile-nav-link">Contact</a>
+  </div>
+
+  <!-- Main Content Wrapper -->
+  <main class="content-wrapper">
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="hero-content">
+        <div class="badge-container fade-in">
+          <span class="hero-badge"><i data-lucide="sparkles"></i> Open to Opportunities</span>
+        </div>
+        <h1 class="hero-title fade-in delay-1">
+          Hi, I am <br>
+          <span class="gradient-text main-name" id="hero-name">Dadi Sri Lakshmi Sivani</span>
+        </h1>
+        <h2 class="hero-subtitle fade-in delay-2">
+          I'm a <span class="typing-text" id="hero-title-text">Data Science & AI Engineer</span><span class="cursor">|</span>
+        </h2>
+        <p class="hero-description fade-in delay-3" id="hero-bio">
+          Seeking an opportunity to start my career in a professional environment where I can apply my skills and knowledge effectively. Eager to learn new technologies, improve my abilities, and contribute to the growth of the organization.
+        </p>
+        
+        <div class="hero-ctas fade-in delay-4">
+          <a href="#projects" class="btn btn-primary"><i data-lucide="folder-git-2"></i> View Projects</a>
+          <a href="#contact" class="btn btn-outline"><i data-lucide="mail"></i> Contact Me</a>
+        </div>
+
+        <div class="social-links-container fade-in delay-5" id="hero-socials">
+          <!-- Social links rendered dynamically -->
+        </div>
+      </div>
+    </section>
+
+    <!-- About & Stats Section -->
+    <section class="about-section scroll-reveal" id="about">
+      <div class="section-container">
+        <div class="section-header">
+          <h2 class="section-title">About Me</h2>
+          <div class="section-divider"></div>
+        </div>
+        
+        <div class="about-grid">
+          <div class="about-text-content">
+            <h3 class="about-heading">My Journey</h3>
+            <p class="about-bio" id="about-detailed-bio">
+              I am currently pursuing my B.Tech in Computer Science and Engineering with a specialization in Data Science from Prasad V Potluri Siddhartha Institute of Technology. I maintain an exceptional academic record with a CGPA of 9.65/10. My focus lies at the intersection of Data Analysis, Backend Development, and AI.
+            </p>
+            <div class="education-card glass">
+              <div class="education-icon-container">
+                <i data-lucide="graduation-cap"></i>
+              </div>
+              <div class="education-details">
+                <h4 class="edu-degree" id="edu-degree">B.Tech in Computer Science & Engineering (Data Science)</h4>
+                <p class="edu-institution" id="edu-institution">Prasad V Potluri Siddhartha Institute of Technology, Vijayawada</p>
+                <div class="edu-footer">
+                  <span class="edu-duration" id="edu-duration"><i data-lucide="calendar"></i> 2023 - Present</span>
+                  <span class="edu-grade" id="edu-grade"><i data-lucide="award"></i> CGPA: 9.65/10</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="about-stats-container">
+            <div class="stat-card glass">
+              <div class="stat-icon-wrapper"><i data-lucide="award"></i></div>
+              <span class="stat-number" id="stat-cgpa">9.65</span>
+              <span class="stat-label">CGPA</span>
+            </div>
+            <div class="stat-card glass">
+              <div class="stat-icon-wrapper"><i data-lucide="trophy"></i></div>
+              <span class="stat-number" id="stat-hackathons">1st</span>
+              <span class="stat-label">LLM Hackathon Winner</span>
+            </div>
+            <div class="stat-card glass">
+              <div class="stat-icon-wrapper"><i data-lucide="folder-git-2"></i></div>
+              <span class="stat-number" id="stat-projects-count">2+</span>
+              <span class="stat-label">Core Projects</span>
+            </div>
+            <div class="stat-card glass">
+              <div class="stat-icon-wrapper"><i data-lucide="shield-check"></i></div>
+              <span class="stat-number" id="stat-certs">3+</span>
+              <span class="stat-label">Certifications</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills-section scroll-reveal" id="skills">
+      <div class="section-container">
+        <div class="section-header">
+          <h2 class="section-title">Technical Expertise</h2>
+          <div class="section-divider"></div>
+        </div>
+        
+        <div class="skills-grid" id="skills-container">
+          <!-- Skills categorized and rendered dynamically -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects-section scroll-reveal" id="projects">
+      <div class="section-container">
+        <div class="section-header">
+          <h2 class="section-title">Featured Projects</h2>
+          <div class="section-divider"></div>
+        </div>
+        
+        <div class="projects-grid" id="projects-container">
+          <!-- Projects rendered dynamically -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Timeline / Experience Section -->
+    <section class="timeline-section scroll-reveal" id="timeline">
+      <div class="section-container">
+        <div class="section-header">
+          <h2 class="section-title">Experience Timeline</h2>
+          <div class="section-divider"></div>
+        </div>
+        
+        <div class="timeline-wrapper" id="timeline-container">
+          <!-- Timeline events rendered dynamically -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Achievements & Certifications -->
+    <section class="achievements-section scroll-reveal" id="achievements">
+      <div class="section-container">
+        <div class="achievements-split-grid">
+          
+          <!-- Certifications -->
+          <div class="certifications-column">
+            <div class="column-header">
+              <i data-lucide="award" class="header-icon"></i>
+              <h3 class="column-title">Certifications</h3>
+            </div>
+            <div class="certifications-list" id="certifications-container">
+              <!-- Certifications rendered dynamically -->
+            </div>
+          </div>
+
+          <!-- Achievements -->
+          <div class="achievements-column">
+            <div class="column-header">
+              <i data-lucide="trophy" class="header-icon"></i>
+              <h3 class="column-title">Key Achievements</h3>
+            </div>
+            <div class="achievements-list" id="achievements-container">
+              <!-- Achievements rendered dynamically -->
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section scroll-reveal" id="contact">
+      <div class="section-container">
+        <div class="section-header">
+          <h2 class="section-title">Get In Touch</h2>
+          <div class="section-divider"></div>
+        </div>
+        
+        <div class="contact-grid">
+          <div class="contact-info glass">
+            <h3>Let's Connect</h3>
+            <p>I'm always open to discussing new opportunities, data science projects, or creative ideas. Feel free to reach out to me via email or phone!</p>
+            
+            <div class="contact-detail-items">
+              <div class="contact-detail-item">
+                <div class="detail-icon"><i data-lucide="mail"></i></div>
+                <div class="detail-text">
+                  <span class="detail-label">Email</span>
+                  <a href="mailto:dadisrilakshmisivani@gmail.com" class="detail-value" id="contact-email">dadisrilakshmisivani@gmail.com</a>
+                </div>
+                <button class="copy-btn" data-copy="dadisrilakshmisivani@gmail.com" title="Copy Email">
+                  <i data-lucide="copy"></i>
+                </button>
+              </div>
+
+              <div class="contact-detail-item">
+                <div class="detail-icon"><i data-lucide="phone"></i></div>
+                <div class="detail-text">
+                  <span class="detail-label">Phone</span>
+                  <a href="tel:+918330989599" class="detail-value" id="contact-phone">+91 8330989599</a>
+                </div>
+              </div>
+
+              <div class="contact-detail-item">
+                <div class="detail-icon"><i data-lucide="map-pin"></i></div>
+                <div class="detail-text">
+                  <span class="detail-label">Location</span>
+                  <span class="detail-value" id="contact-location">Vijayawada, India</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-container glass">
+            <h3>Send a Message</h3>
+            <form id="contact-form" class="contact-form">
+              <div class="form-group">
+                <label for="form-name">Name</label>
+                <input type="text" id="form-name" required placeholder="John Doe">
+              </div>
+              <div class="form-group">
+                <label for="form-email">Email</label>
+                <input type="email" id="form-email" required placeholder="john@example.com">
+              </div>
+              <div class="form-group">
+                <label for="form-message">Message</label>
+                <textarea id="form-message" rows="5" required placeholder="Hey Sivani, I'd love to talk about..."></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block"><i data-lucide="send"></i> Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="glass-footer">
+    <div class="footer-container">
+      <p>&copy; <span id="footer-year">2026</span> <span id="footer-name">Dadi Sri Lakshmi Sivani</span>. All rights reserved.</p>
+      <p class="built-with">Built with HTML, CSS, and JS (Customizable Interface)</p>
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast glass hidden">
+    <span id="toast-message">Message sent successfully!</span>
+  </div>
+
+  <!-- CUSTOMIZER SIDEBAR PANEL -->
+  <div class="customizer-backdrop" id="customizer-backdrop"></div>
+  <aside class="customizer-sidebar glass" id="customizer-sidebar">
+    <div class="customizer-header">
+      <h3><i data-lucide="sliders"></i> Design & Content Editor</h3>
+      <button id="customizer-close" class="close-btn" title="Close Panel">
+        <i data-lucide="x"></i>
+      </button>
+    </div>
+    
+    <!-- Customizer Tabs -->
+    <div class="customizer-tabs">
+      <button class="tab-btn active" data-tab="profile-tab">Profile</button>
+      <button class="tab-btn" data-tab="skills-tab">Skills</button>
+      <button class="tab-btn" data-tab="projects-tab">Projects</button>
+      <button class="tab-btn" data-tab="design-tab">Design</button>
+    </div>
+
+    <div class="customizer-content">
+      <!-- Profile Tab -->
+      <div class="customizer-pane active" id="profile-tab">
+        <div class="form-group">
+          <label>Full Name</label>
+          <input type="text" id="edit-name">
+        </div>
+        <div class="form-group">
+          <label>Job Title</label>
+          <input type="text" id="edit-title">
+        </div>
+        <div class="form-group">
+          <label>Professional Bio</label>
+          <textarea id="edit-bio" rows="4"></textarea>
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" id="edit-email">
+        </div>
+        <div class="form-group">
+          <label>Phone</label>
+          <input type="text" id="edit-phone">
+        </div>
+        <div class="form-group">
+          <label>Location</label>
+          <input type="text" id="edit-location">
+        </div>
+        <div class="form-group">
+          <label>LinkedIn Link</label>
+          <input type="url" id="edit-linkedin">
+        </div>
+        <div class="form-group">
+          <label>GitHub Link</label>
+          <input type="url" id="edit-github">
+        </div>
+        <div class="form-group">
+          <label>LeetCode Link</label>
+          <input type="url" id="edit-leetcode">
+        </div>
+        <div class="form-group">
+          <label>CodeChef Link</label>
+          <input type="url" id="edit-codechef">
+        </div>
+      </div>
+
+      <!-- Skills Tab -->
+      <div class="customizer-pane" id="skills-tab">
+        <p class="tab-help-text">Add or delete skills from your expertise sections. Skill lists will render automatically.</p>
+        <div class="add-item-form glass">
+          <h4>Add New Skill</h4>
+          <div class="form-group">
+            <label>Skill Name</label>
+            <input type="text" id="new-skill-name" placeholder="e.g. PyTorch">
+          </div>
+          <div class="form-group">
+            <label>Category</label>
+            <select id="new-skill-category">
+              <option value="Programming Languages">Programming Languages</option>
+              <option value="Core CS Concepts">Core CS Concepts</option>
+              <option value="Backend Development">Backend Development</option>
+              <option value="Databases">Databases</option>
+              <option value="Libraries & Frameworks">Libraries & Frameworks</option>
+              <option value="Tools & Platforms">Tools & Platforms</option>
+            </select>
+          </div>
+          <button id="add-skill-btn" class="btn btn-primary btn-sm btn-block"><i data-lucide="plus"></i> Add Skill</button>
+        </div>
+        <div class="skills-manage-list" id="edit-skills-list">
+          <!-- Skills editable tags populated here -->
+        </div>
+      </div>
+
+      <!-- Projects Tab -->
+      <div class="customizer-pane" id="projects-tab">
+        <p class="tab-help-text">Manage your featured projects in the list below.</p>
+        <div class="add-item-form glass">
+          <h4>Add New Project</h4>
+          <div class="form-group">
+            <label>Project Title</label>
+            <input type="text" id="new-project-title" placeholder="e.g. Chatbot AI">
+          </div>
+          <div class="form-group">
+            <label>Platform/Tag</label>
+            <input type="text" id="new-project-platform" placeholder="e.g. Python & RAG">
+          </div>
+          <div class="form-group">
+            <label>GitHub/Link URL</label>
+            <input type="url" id="new-project-link" placeholder="https://github.com/...">
+          </div>
+          <div class="form-group">
+            <label>Bullets (Comma separated)</label>
+            <textarea id="new-project-bullets" rows="3" placeholder="Bullet 1, Bullet 2, Bullet 3"></textarea>
+          </div>
+          <div class="form-group">
+            <label>Tech Stack (Comma separated)</label>
+            <input type="text" id="new-project-tech" placeholder="e.g. Python, OpenAI, Vector DB">
+          </div>
+          <button id="add-project-btn" class="btn btn-primary btn-sm btn-block"><i data-lucide="plus"></i> Add Project</button>
+        </div>
+        <div class="projects-manage-list" id="edit-projects-list">
+          <!-- Projects list populated here -->
+        </div>
+      </div>
+
+      <!-- Design Tab -->
+      <div class="customizer-pane" id="design-tab">
+        <h4>Color Palette Themes</h4>
+        <div class="theme-grid" id="theme-selector-container">
+          <!-- Theme choices rendered dynamically -->
+        </div>
+        
+        <h4 style="margin-top: 1.5rem;">Visual Adjustments</h4>
+        <div class="form-group range-group">
+          <label for="blur-slider">Card Glass Blur: <span id="blur-val">12px</span></label>
+          <input type="range" id="blur-slider" min="0" max="30" value="12">
+        </div>
+        <div class="form-group range-group">
+          <label for="glass-opacity">Card Opacity: <span id="opacity-val">0.7</span></label>
+          <input type="range" id="glass-opacity" min="10" max="100" value="70">
+        </div>
+      </div>
+    </div>
+
+    <!-- Customizer Footer -->
+    <div class="customizer-footer">
+      <button id="save-customization-btn" class="btn btn-primary"><i data-lucide="save"></i> Save Changes</button>
+      <button id="export-customization-btn" class="btn btn-outline" title="Download portfolio-config.json"><i data-lucide="download"></i> Export Config</button>
+      <button id="reset-customization-btn" class="btn btn-danger-outline" title="Reset to original Resume"><i data-lucide="rotate-ccw"></i> Reset</button>
+    </div>
+  </aside>
+
+  <!-- Core Javascript -->
+  <script type="module" src="script.js"></script>
+</body>
+</html>
